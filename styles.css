@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: Poppins;
+}
+
+button {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1d5b79;
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  border: 1px solid #1d5b79;
+  cursor: pointer;
+}
+input {
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 2px solid #1d5b79;
+}
+.container {
+  margin: 10% auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 2px solid #1d5b79;
+  max-height: 700;
+}
+
+.title {
+  margin: 2rem;
+}
+.title h1 {
+  color: #3aa6b9;
+  font-weight: 500;
+}
+.allList {
+  margin-top: 2rem;
+  max-height: 500px;
+  max-width: 450px;
+  overflow-y: scroll;
+  padding: 2rem 1rem;
+  border-top: 2px solid #1d5b79;
+  border-bottom: 2px solid #1d5b79;
+}
+.addedList {
+  margin: 0.2rem;
+  display: grid;
+  grid-template-columns: 1rem 1fr 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #1d5b79;
+  padding: 0.5rem 1.5rem;
+  max-width: 400px;
+}
+.taskName {
+  text-transform: capitalize;
+}
+.taskDone {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #a8a196;
+}
+
+.doneButton {
+  font-size: 1rem;
+  font-style: italic;
+  color: #fff;
+  background-color: #ff6666;
+  padding: 0.6rem 1rem;
+  border-radius: 7px;
+  border: 1px solid #ff6666;
+  cursor: pointer;
+}
+.myName {
+  padding-top: 2rem;
+  color: #3aa6b9;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin: 10% auto;
+    max-width: 400px;
+    max-height: 600px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  input {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .addedList {
+    margin: 0.1rem;
+    grid-template-columns: 1rem 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+    place-items: center;
+    border-radius: 10px;
+    border: 2px solid #1d5b79;
+    padding: 0.2rem 0.6rem;
+    max-width: 300px;
+  }
+  .taskName {
+    font-size: 0.9rem;
+  }
+  .deleteBtn {
+    width: 100px;
+    /* margin: 2px 0 0 180px; */
+    padding: 0.3rem 0.3rem;
+  }
+  .doneButton {
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+  }
+  .myName {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .allList {
+    margin-top: 0.5rem;
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 1rem 1rem;
+    border-top: 2px solid #1d5b79;
+    border-bottom: 2px solid #1d5b79;
+    max-width: 350px;
+  }
+  .title {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 10% 1rem;
+    max-width: 400px;
+  }
+}
